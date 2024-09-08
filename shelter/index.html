@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index-style.css">
     <link rel="icon" href="assets/img/fav1.png" type="image/x-icon">
-    <script src="index.js" defer></script>
 </head>
 <body>
 
@@ -44,15 +43,20 @@
                                 <a href="#contacts">Contacts</a> 
                             </li>
                         </ul>
+
+                        <div class="header-nav-close">
+                            <span class="header-nav-close-line header-nav-close-first"></span>
+                            <span class="header-nav-close-line header-nav-close-second"></span>
+                            <span class="header-nav-close-line header-nav-close-third"></span>
+                        </div>
                     </nav>
                 </div>
 
-                <div class="header-burger">
+                <div class="header-burger burger">
                     <span class="burger-line burger-line-first"></span>
                     <span class="burger-line burger-line-second"></span>
                     <span class="burger-line burger-line-third"></span>
                 </div>
-
             </div>
         </div>
     </header>
@@ -99,50 +103,29 @@
         <section class="our_friends" id="our_friends">
             <div class="wrapper">
                 <div class="our_friends-wrapper">
-
                     <div class="our_friends-content">
                         <h2>Our friends who<br>are looking for a house</h2>
                     </div>
-
+        
                     <div class="our_friends-display">
-                        <div class="our_friends-arrow">
-                            <img src="assets/img/button_arrow.png" alt="button">
+                        <div class="our_friends-arrow" id="prevArrow">
+                            <img src="assets/img/button_arrow.png" alt="Previous">
                         </div>
-
-                        <div class="our_friends-list">
-
-                            <div class="our_friends-item">
-                                <img src="assets/img/pets-katrine.png" alt="Katrine pet">
-                                <h3>Katrine</h3>
-                                <p>Learn more</p>
-                            </div>
-
-                            <div class="our_friends-item">
-                                <img src="assets/img/pets-jennifer.png" alt="Jennifer pet">
-                                <h3>Jennifer</h3>
-                                <p>Learn more</p>
-                            </div>
-
-                            <div class="our_friends-item">
-                                <img src="assets/img/pets-woody.png" alt="Woody pet">
-                                <h3>Woody</h3>
-                                <p>Learn more</p>
-                            </div>
-
+        
+                        <div class="our_friends-list" id="slider">
+                            <!-- Slider items will be dynamically added here -->
                         </div>
-
-
-                        <div class="our_friends-arrow-reverse">
-                            <img src="assets/img/button_arrow.png" alt="button">
+        
+                        <div class="our_friends-arrow-reverse" id="nextArrow">
+                            <img src="assets/img/button_arrow.png" alt="Next">
                         </div>
                     </div>
-
+                    
                     <div class="our_friends-cursors">
-                            
-                        <div class="our_friends-arrow-second">
+                        <div class="our_friends-arrow-second" id="prevArrowSecond">
                             <img src="assets/img/button_arrow.png" alt="button">
                         </div>
-                        <div class="our_friends-arrow-reverse-second">
+                        <div class="our_friends-arrow-reverse-second" id="nextArrowSecond">
                             <img src="assets/img/button_arrow.png" alt="button">
                         </div>
                     </div>
@@ -150,10 +133,10 @@
                     <a href="pets.html" class="our_friends-button">
                         <p>Get to know the rest</p>
                     </a>
-
                 </div>
             </div>
         </section>
+        
 
         <section class="help" id="help">
             <div class="wrapper">
@@ -206,7 +189,7 @@
     <footer class="footer" id="contacts">
         <div class="wrapper">
             <div class="footer-wrapper">
-
+                
                 <div class="footer-text">
                     <h2>For questions<br>and suggestions</h2>
                     <div class="footer-line">
@@ -244,6 +227,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
-
 </html>
